@@ -1,6 +1,6 @@
 {
   "name": "movo-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An experimental CSS UI Library",
   "main": "./dist/movo-ui.min.css",
   "scripts": {
