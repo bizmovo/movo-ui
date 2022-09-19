@@ -1,0 +1,23 @@
+{
+  "name": "movo-ui",
+  "version": "1.0.0",
+  "description": "An experimental CSS UI Library",
+  "main": "./dist/movo-ui.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass index.scss ./dist/movo-ui.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bizmovo/movo-ui.git"
+  },
+  "author": "Berkay Çubuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bizmovo/movo-ui/issues"
+  },
+  "homepage": "https://github.com/bizmovo/movo-ui#readme",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}

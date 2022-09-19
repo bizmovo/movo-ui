@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/*
+ * Movo UI v1.0.0
+ *
+ * Created & Designed by: Berkay Çubuk <berkay@berkaycubuk.com>
+ */
+/*
+ * variables.scss
+ */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica;
+  color: #111111;
+}
+
+body {
+  margin: 0;
+  color: #111111;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+*,
+html {
+  box-sizing: border-box;
+}
+
+a {
+  color: #4072cf;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+.container {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 640px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1024px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+.main {
+  flex: 1;
+}
+
+.main-w-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .main-w-sidebar {
+    flex-direction: row;
+  }
+}
+
+.main-content {
+  flex: 1;
+}
+
+.sidebar {
+  width: 200px;
+}
+.sidebar ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.sidebar ul ul {
+  padding-inline-start: 20px;
+}
+.sidebar a {
+  display: inline-block;
+  padding: 8px;
+  color: #111111;
+  opacity: 0.8;
+}
+.sidebar a:hover {
+  opacity: 1;
+}
+.sidebar a.active {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: #ffffff;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+.button.blue {
+  color: #ffffff;
+  background-color: #4072cf;
+}
+.button.blue:hover {
+  background-color: #5181db;
+}
+.button.red {
+  color: #ffffff;
+  background-color: #c24040;
+}
+.button.red:hover {
+  background-color: #d45353;
+}
+.button.green {
+  color: #ffffff;
+  background-color: #37ad3f;
+}
+.button.green:hover {
+  background-color: #4abd51;
+}
+.button.orange {
+  color: #ffffff;
+  background-color: #cf9640;
+}
+.button.orange:hover {
+  background-color: #d19f54;
+}
+.button.black {
+  color: #ffffff;
+  background-color: #111111;
+}
+.button.black:hover {
+  background-color: #454545;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table thead {
+  display: none;
+}
+@media (min-width: 768px) {
+  .table thead {
+    display: contents;
+  }
+}
+.table thead tr {
+  background-color: #f2f2f2;
+}
+.table thead tr th {
+  padding: 20px 25px;
+}
+.table tr {
+  display: grid;
+  border: 1px solid #eee;
+}
+@media (min-width: 768px) {
+  .table tr {
+    display: table-row;
+  }
+}
+.table td,
+.table th {
+  text-align: left;
+  color: #111111;
+  padding: 10px 25px;
+}
+.table td .table-mobile-head,
+.table th .table-mobile-head {
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 8px;
+}
+@media (min-width: 768px) {
+  .table td .table-mobile-head,
+.table th .table-mobile-head {
+    display: none;
+  }
+}
+
+.table-footer {
+  border: 1px solid #eee;
+  border-top: none;
+  padding: 20px 25px;
+}
+
+.table-pagination {
+  display: flex;
+  width: fit-content;
+  gap: 8px;
+  margin-left: auto;
+}
+.table-pagination .table-pagination-link svg {
+  color: #111111;
+}
+.table-pagination .table-pagination-link.disabled svg {
+  opacity: 0.5;
+}
+
+.highlight pre {
+  padding: 15px;
+  background-color: #272822;
+  border-radius: 4px;
+}
+
+.footer {
+  padding: 10px 12px;
+}
+.footer-copyright {
+  color: #454545;
+}
+
+/*# sourceMappingURL=movo-ui.min.css.map */
