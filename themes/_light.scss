@@ -1,0 +1,27 @@
+// base colors
+$color-blue: #4072cf;
+$color-blue--light: #5181db;
+$color-red: #c24040;
+$color-red--light: #d45353;
+$color-green: #37ad3f;
+$color-green--light: #4abd51;
+$color-orange: #cf9640;
+$color-orange--light: #d19f54;
+$color-white: #ffffff;
+$color-black: #111111;
+$color-black--light: #454545;
+
+// other colors
+$color-primary: $color-blue;
+$color-secondary: $color-orange;
+$color-bg: $color-white;
+$color-text: $color-black;
+
+// tables
+$color-table-border: #eee;
+$padding-table-td: 10px 25px;
+$padding-table-head: 20px 25px;
+$padding-table-footer: 20px 25px;
+
+// footer
+$color-footer-copyright: $color-black--light;

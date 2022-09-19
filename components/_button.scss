@@ -1,0 +1,56 @@
+.button {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: $border-radius;
+    outline: none;
+    color: $color-white;
+    text-align: center;
+    transition: background-color $transition-delay;
+
+    &.blue {
+        color: $color-white;
+        background-color: $color-blue;
+
+        &:hover {
+            background-color: $color-blue--light;
+        }
+    }
+
+    &.red {
+        color: $color-white;
+        background-color: $color-red;
+
+        &:hover {
+            background-color: $color-red--light;
+        }
+    }
+
+    &.green {
+        color: $color-white;
+        background-color: $color-green;
+
+        &:hover {
+            background-color: $color-green--light;
+        }
+    }
+
+    &.orange {
+        color: $color-white;
+        background-color: $color-orange;
+
+        &:hover {
+            background-color: $color-orange--light;
+        }
+    }
+
+    &.black {
+        color: $color-white;
+        background-color: $color-black;
+
+        &:hover {
+            background-color: $color-black--light;
+        }
+    }
+}

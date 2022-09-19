@@ -1,0 +1,31 @@
+.sidebar {
+    width: 200px;
+
+    ul {
+        list-style: none;
+        padding-inline-start: 0;
+
+        ul {
+            padding-inline-start: 20px;
+        }
+    }
+
+    li {
+    }
+
+    a {
+        display: inline-block;
+        padding: 8px;
+        color: $color-text;
+        opacity: .8;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &.active {
+            opacity: 1;
+            font-weight: bold;
+        }
+    }
+}

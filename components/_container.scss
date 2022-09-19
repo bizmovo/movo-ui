@@ -1,0 +1,37 @@
+.container {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+
+    @include md {
+        width: $screen-sm;
+    }
+
+    @include lg {
+        width: $screen-md;
+    }
+
+    @include xl {
+        width: $screen-lg;
+    }
+
+    @include xxl {
+        width: $screen-xl;
+    }
+}
+
+.main {
+    flex: 1;
+}
+
+.main-w-sidebar {
+    display: flex;
+    flex-direction: column;
+
+    @include md {
+        flex-direction: row;
+    }
+}
+
+.main-content {
+    flex: 1;
+}

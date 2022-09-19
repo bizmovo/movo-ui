@@ -1,0 +1,33 @@
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica;
+    color: $color-text;
+}
+
+body {
+    margin: 0;
+    color: $color-text;
+    background-color: $color-bg;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+*,
+html {
+    box-sizing: border-box;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+
+    &:hover {
+        opacity: .8;
+    }
+}

@@ -1,0 +1,75 @@
+.table-container {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+        display: none;
+
+        @include md {
+            display: contents;
+        }
+
+        tr {
+            background-color: #f2f2f2;
+
+            th {
+                padding: $padding-table-head;
+            }
+        }
+    }
+
+    tr {
+        display: grid;
+        border: 1px solid $color-table-border;
+
+        @include md {
+            display: table-row;
+        }
+    }
+
+    td,
+    th {
+        text-align: left;
+        color: $color-text;
+        padding: $padding-table-td;
+
+        .table-mobile-head {
+            font-weight: bold;
+            display: inline-block;
+            padding-right: 8px;
+
+            @include md {
+                display: none;
+            }
+        }
+    }
+}
+
+.table-footer {
+    border: 1px solid $color-table-border;
+    border-top: none;
+    padding: $padding-table-footer;
+}
+
+.table-pagination {
+    display: flex;
+    width: fit-content;
+    gap: 8px;
+    margin-left: auto;
+
+    .table-pagination-link {
+        svg {
+            color: $color-text;
+        }
+
+        &.disabled {
+            svg {
+                opacity: .5;
+            }
+        }
+    }
+}
